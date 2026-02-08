@@ -20,7 +20,7 @@ jobs: #aqui es donde ordenamos los jobs
 
 
     deploy:
-        runs-on: ubuntu-latest
+        runs-on: self-hosted
         needs: test #dependencia del job test
         if: ${{ success() }}
         steps:
