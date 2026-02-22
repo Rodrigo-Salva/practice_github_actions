@@ -1,5 +1,7 @@
 name: CI Workflow
-on: pull_request
+on: 
+  pull_request:
+    types: [opened, closed] # cuando se abre o cierra un pull request
         
 jobs:
   build:
